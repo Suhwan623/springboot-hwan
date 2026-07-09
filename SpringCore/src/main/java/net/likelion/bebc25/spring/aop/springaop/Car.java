@@ -1,4 +1,4 @@
-package net.likelion.bebc25.oop.spring;
+package net.likelion.bebc25.spring.aop.springaop;
 
 public interface Car {
     void startEngine();

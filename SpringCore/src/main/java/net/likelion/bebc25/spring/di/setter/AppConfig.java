@@ -1,4 +1,4 @@
-package net.likelion.bebc25.oop.spring;
+package net.likelion.bebc25.spring.di.setter;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -14,6 +14,8 @@ public class AppConfig {
 
     @Bean
     public Driver driver (Car car) {
-        return new Driver(car);
+        Driver driver = new Driver();
+        driver.setCar(car);
+        return driver;
     }
 }

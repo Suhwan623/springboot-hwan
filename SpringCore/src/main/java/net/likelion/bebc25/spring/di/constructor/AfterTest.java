@@ -1,4 +1,4 @@
-package net.likelion.bebc25.oop.spring;
+package net.likelion.bebc25.spring.di.constructor;
 
 import net.likelion.bebc25.oop.after.Car;
 import net.likelion.bebc25.oop.after.Driver;

@@ -1,4 +1,4 @@
-package net.likelion.bebc25.oop.spring;
+package net.likelion.bebc25.spring.aop.dynamicproxy;
 
 
 public class Driver {
@@ -7,6 +7,7 @@ public class Driver {
 
     // DI
     public Driver(Car car) {
+        System.out.println("called Constructor");
         this.car = car;
     }
 

@@ -1,6 +1,6 @@
-package net.likelion.bebc25.oop.spring;
+package net.likelion.bebc25.spring.di.setter;
 
-public class GasolineCar implements Car{
+public class GasolineCar implements Car {
 
     public void startEngine() {
         System.out.println("가솔린 엔진에 점화하여 시동을 켭니다.");
