@@ -1,0 +1,18 @@
+package net.likelion.bebc25.spring.componentscan;
+
+import org.springframework.stereotype.Component;
+
+@Component // 빈의 이름은 gasolineCar로 자동 지정
+public class GasolineCar implements Car {
+
+    public void startEngine() {
+        System.out.println("가솔린 엔진에 점화하여 시동을 켭니다.");
+    }
+    public void drive(){
+        System.out.println("가솔린을 사용하여 주행합니다.");
+    }
+    public void stopEngine() {
+        System.out.println("가솔린 공급을 차단하여 시동을 끕니다.");
+    }
+
+}

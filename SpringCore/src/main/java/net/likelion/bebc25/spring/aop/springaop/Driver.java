@@ -10,7 +10,7 @@ public class Driver {
         this.car = car;
     }
 
-    public void driveCar(int maxSpeed) {
+    public void driveCar() {
         car.startEngine();
         car.drive();
         car.stopEngine();
