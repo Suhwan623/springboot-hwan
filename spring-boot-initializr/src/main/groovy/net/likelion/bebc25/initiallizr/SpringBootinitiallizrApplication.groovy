@@ -1,13 +1,18 @@
-package net.likelion.bebc25.initiallizr
+package net.likelion.bebc25.initiallizr;
 
-import org.springframework.boot.SpringApplication
-import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
 
 @SpringBootApplication
-class SpringBootinitiallizrApplication {
+public class SpringBootIntellijApplication {
 
-    static void main(String[] args) {
-        SpringApplication.run(SpringBootinitiallizrApplication, args)
+    public static void main(String[] args) {
+        ConfigurableApplicationContext context = SpringApplication.run(SpringBootIntellijApplication.class, args);
+        Driver driver = context.getBean(Driver.class);
+        driver.driveCar(80);
+        context.close();
     }
 
 }
